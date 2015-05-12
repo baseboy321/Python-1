@@ -1,0 +1,15 @@
+#!/usr/bin/env python3
+
+page = {
+  'text': '''
+    I enjoy long, {} walks on the beach, getting {} in the rain
+    and serendipitous encounters with {}. I really like piña coladas
+    mixed with {}, and romantic, candle-lit {}. I
+    am well-read from Dr. Seuss to {}. I travel frequently,
+    especially to {}, when I am not busy with
+    work. (I am a {}.) I am looking for {} and beauty in the form
+    of a {} goddess. She should have the physique of
+    {} and the {} of {}. I would prefer
+    if she knew how to cook, clean, and wash my {}. I know I’m
+    not very attractive in my picture, but it was taken {}
+    days ago, and I have since become more {}.
