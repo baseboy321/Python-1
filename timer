@@ -5,19 +5,29 @@ import colors as c
 
 print(c.clear)
 
-print(c.red + "If you want to quit type Ctrl c")
+
 hundredths = 0
 seconds = 0
 minutes = 0
 hours = 0
+days = 0
+form = ("""  
+
+
+
+
+
+
+
+
+
+                                {}D{:02}:{:02}:{:02}.{:02}
+""")
+
 mesg = c.clear + c. magenta + "If you want to quit type Ctrl c" + c.reset
 try:
     while True:
-        print(mesg + '{:02}:{:02}:{:02}.{:02}' .format(hours,minutes,seconds,hundredths))     
-        print(hours)
-        print(minutes)
-        print(seconds)
-        print(hundredths)
+        print(mesg + c.green + form.format(days,hours,minutes,seconds,hundredths))     
         #print(c.magenta + 'It has been' , hundredths , ' hundredths')
         #print(c.blue + str(seconds) + c.magenta + 'It has been' , seconds , ' seconds')
         time.sleep(0.01)
@@ -34,7 +44,9 @@ try:
             print(hours)
             minutes = 0
             hours += 1
-
+        if hours == 60:
+            print(days)
+            day += 1
 except KeyboardInterrupt:
     print(c.green + '\b\bsee you later' + c.reset)
     exit()
