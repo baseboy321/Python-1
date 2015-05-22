@@ -5,8 +5,7 @@ import colors as c
 print(c.clear)
 snake = '''
 
-
-        SNAKE
+SNAKEA SNAKEA
 
 '''
 while True:
@@ -21,6 +20,7 @@ while True:
             print('Muuussshroom') 
             time.sleep(0.8)
         print(c.clear)
+        print(snake)
         print(snake)
         time.sleep(6)
         print(c.clear)
