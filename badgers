@@ -20,7 +20,7 @@ while True:
             print('Muuussshroom') 
             time.sleep(0.8)
             print(c.clear)
-        if mushroom in range (3):
+            if verse > 1:
                 print(snake)
                 time.sleep(6)
                 print(c.clear)
