@@ -19,9 +19,8 @@ while True:
         for mushroom in range(2):
             print('Muuussshroom') 
             time.sleep(0.8)
-        print(c.clear)
-        print(snake)
-        print(snake)
-        time.sleep(6)
-        print(c.clear)
-    print(c.clear)
+            print(c.clear)
+        if mushroom in range (3):
+                print(snake)
+                time.sleep(6)
+                print(c.clear)
