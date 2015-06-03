@@ -15,12 +15,10 @@ while True:
         for badger in range(12):
             print('Badgers!')
             time.sleep(0.38)
-
         for mushroom in range(2):
             print('Muuussshroom') 
             time.sleep(0.8)
+        if verse > 1:
+            print(snake)
+            time.sleep(6)
             print(c.clear)
-            if verse > 1:
-                print(snake)
-                time.sleep(6)
-                print(c.clear)
