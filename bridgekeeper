@@ -23,18 +23,19 @@ name = prompt('what is your name?')
 quest = prompt('what is your quest?')
 if name in ['lancelot', 'galahad']: 
     color = prompt('what is your favorite colour')
-    if 'no' in color:
+    if color == 'no':
         die()
 
 elif name == 'robin':
     capital = prompt('what is the capital of Assyrea?')
-    print('thou art cast in gorge of eternal peril')
-    if answer in ('asure')
-    #pass
+    if capital == 'asure':
+        live()
 elif name == 'arthur':
-    swallow = ('what is the speed volocity of an unladen swallow?')
-    if answer in ["african", "european"]:
+    swallow = prompt('what is the speed volocity of an unladen swallow?')
+    if swallow in ['african', 'european']:
         print('bridge keeper dies')
+    if swallow in ['11','24']:
+        live()
     #pass
 else:
     pass
