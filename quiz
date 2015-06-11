@@ -1,0 +1,34 @@
+#!/usr/bin/env python3
+import colors as c
+from utils import ask
+import random
+
+print(c.magenta + 'welcom to the ' + c.red +'QUIZ GAME ' + c.reset + '''
+test your knowlege''')
+print(c.reset)
+
+def q1():    
+    answer = ask(c.green + 'What color are the unicorns?')
+    if answer == 'pink':
+        return True
+    return False
+
+def q2():    
+    answer = ask(c.blue + 'what are they dancing on?')
+    if answer.startswith('rainbow'):
+        return True
+    return False
+
+def q3():    
+    answer = ask('please use one word to describe the texture of there fur:')
+    if answer.startswith('smile'):
+        return True
+    return False
+
+questions = [q1,q2,q3]
+
+while questions:
+    question = random.choice(questions)
+    answer = question()
+    if answer:
+        questions.remove(question)
