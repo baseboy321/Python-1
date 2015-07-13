@@ -1,15 +1,32 @@
 #!/usr/bin/env python3
+import colors as c
+from utils import ask
 
-alex = 'I enjoy {} walks on the beach, getting rained on by {}
-and bumped into a {}. I really like milk with
-{} and romantic {}. I also won a food eating contest with
-{}. My freind is {} awesome, (but she has bad grades) 
-{} when I am not busy with my car, or work
-(I am a {}.) I am looking for {} and beauty in the form
-of a {} goddess. She should have the physique of
-{} and the {} of {}. I would prefer if she could
-cook, clean, and wash my {}. I know I dont look
-cool in my picture, but it was cu by my cat
-and i had to tape it back up.'
+print(c.clear)
+print(c.green + '''
+    welcome to my maddlib
+    ''' + c.reset )
+
+alex = """I like going to the {adjective1} mall and eating at the rainforest cafe
+having a hotdog. I also got some {adjective2} desert that was made of frozen {liquid2}. 
+My friend {friend} works at the mall. I drove away from the mall in my {type of car1} and
+my car is coverd in {food1}. I like my drinks mixed with {liquid1}."""
                                                                 
-print(alex)
+
+words = {
+    'adjective1': None,
+    'adjective2': None,
+    'liquid2': None,
+    'friend': None,
+    'type of car1': None,
+    'food1': None,
+    'liquid1': None
+
+}
+
+for keyword in words:
+    words[keyword] = ask(keyword + ':')
+
+print(alex.format(**words))
+
+

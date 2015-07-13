@@ -1,0 +1,28 @@
+#!/usr/bin/env python3
+import random
+
+print ('would you like to run this program')
+
+
+answer = input('> ')
+
+if answer == 'no':
+    exit('OK, thats fine with me')
+if answer == 'yes':
+    exit('LEAVE ME ALONE')
+
+print('''
+Welcome to the Magic eight Ball.
+Enter your question below.
+''')
+
+
+
+answers = ['Yes.','NO.','Maybe so.','of course.','what do you think.','I better not tell you.','sure.','definatly not','yes you are.','yes you are','LEAVE ME ALONE!','GO AWAY','To Bad','I Do not Know','yes you are']
+while True:
+
+    question = input('> ')
+    answer = random.choice(answers)
+    print(answer)
+    if question == 'what is your name':
+        print('my name is Bob')

@@ -1,0 +1,15 @@
+#!/usr/bin/env python3
+
+red = '\033[0;31m'
+blue = '\033[0;34m'
+pink = '\033[0;35m' 
+all_color = '\033[0;'
+i = 31
+
+
+while True:
+    #print(red + ' MEOW' + blue + ' MEOW' + pink + ' MEOW' , end = ' ')
+    print(all_color + str(i) + 'm MEOW' , end = ' ' )
+    i = i + 1
+    if i > 36:
+        i = 31

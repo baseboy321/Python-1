@@ -1,0 +1,12 @@
+#!/usr/bin/env python3
+blue = '\033[0;34m'
+red = '\033[0;31m'
+green = '\033[0;32m'
+orange = '\033[1;31m'
+cyan = '\033[0;36m'
+print(blue + 'hello what is your name?' + orange)
+name = input(red + '< ' + cyan)
+print(green + 'hello, ' + name)
+print(blue + 'How are you today?')
+feeling = input(orange + '< ' + red)
+print('I have no emotions, I am a computer ' + name) 

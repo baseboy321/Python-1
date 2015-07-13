@@ -1,2 +1,2 @@
-# Python-1
-My Python 1 yah  (^_^)
+# python-0
+My Pyhton 0 is cool (^_^) IM SO AWESOM

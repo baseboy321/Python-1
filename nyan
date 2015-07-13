@@ -1,0 +1,13 @@
+#!/usr/bin/env python3
+import colors as c
+import random as r
+
+print('would you like to run this progran?')
+answer = input('> ')
+if answer == ('no'):
+    exit()
+
+while True:
+    #print('MEOW' , end = ' '*r.randint(1,40))
+    print(c.colors() , 'MEOW' , end = ' '*r.randint(1,40))
+
