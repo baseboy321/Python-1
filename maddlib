@@ -7,26 +7,28 @@ print(c.green + '''
     welcome to my maddlib
     ''' + c.reset )
 
-alex = """I like going to the {adjective1} mall and eating at the rainforest cafe
-having a hotdog. I also got some {adjective2} desert that was made of frozen {liquid2}. 
-My friend {friend} works at the mall. I drove away from the mall in my {type of car1} and
-my car is coverd in {food1}. I like my drinks mixed with {liquid1}."""
+text = """I like going to the {Description} mall and eating at the rainforest cafe
+having a hotdog. I also got some {Adjective} desert that was made of frozen {Liquid1}. 
+My friend {Friend} works at the mall. I drove away from the mall in my {Type of car} 
+and my car is coverd in {Food}. I like my drinks mixed with {Liquid2}."""
                                                                 
+title = text.splitlines()[0]
+
 
 words = {
-    'adjective1': None,
-    'adjective2': None,
-    'liquid2': None,
-    'friend': None,
-    'type of car1': None,
-    'food1': None,
-    'liquid1': None
+    'Description': None,
+    'Adjective': None,
+    'Liquid1': None,
+    'Friend': None,
+    'Type of car': None,
+    'Food': None,
+    'Liquid2': None
 
 }
 
 for keyword in words:
-    words[keyword] = ask(keyword + ':')
+    words[keyword] = c.green + ask(keyword + ':' + c.reset )
 
-print(alex.format(**words))
+print(text.format(**words))
 
 
