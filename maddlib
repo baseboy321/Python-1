@@ -30,5 +30,3 @@ for keyword in words:
     words[keyword] = c.green + ask(keyword + ':' + c.reset )
 
 print(text.format(**words))
-
-
