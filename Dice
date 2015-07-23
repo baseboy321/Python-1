@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import colors as c
+import random
 
 sides = []
 
@@ -47,14 +48,25 @@ sides.append('''
 
 sides.append('''
  -------
-| O O O |
-| O O O |
-| O O O |
+|  O  O |
+|  O  O |
+|  O  O |
  -------
 ''')
 from utils import ask
 import time
-for n in range(6):
+
+num = 1
+while True:
+    print(c.clear, end=' ')
+    for count in range(num):
+        side = random.choice(sides)
+        print(c.random_color() + side + c.reset, end="")
+
+
+
+#===========================#
+#for n in range(6):
 #n = int(ask(c.clear + "show what side?"))\
-    print(c.clear + c.random_color() + sides[n] + c.reset)
-    time.sleep(1)
+    #print(c.clear + c.random_color() + sides[n] + c.reset)
+    #time.sleep(1)
