@@ -1,0 +1,60 @@
+#!/usr/bin/env python3
+
+import colors as c
+
+sides = []
+
+sides.append('''
+ -------
+|       |
+|   o   |
+|       |
+ -------
+''')
+
+sides.append('''
+ -------
+|       |
+|  o o  |
+|       |
+ -------
+''')
+ 
+sides.append('''
+ -------
+|  O    |
+|   O   |
+|    O  |
+ -------
+''')
+
+sides.append('''
+ -------
+| O   O |
+|       |
+| O   O |
+ -------
+''')
+
+sides.append('''
+ -------
+| O   O |
+|   O   |
+| O   O |
+ -------
+''')
+
+
+sides.append('''
+ -------
+| O O O |
+| O O O |
+| O O O |
+ -------
+''')
+from utils import ask
+import time
+for n in range(6):
+#n = int(ask(c.clear + "show what side?"))\
+    print(c.clear + c.random_color() + sides[n] + c.reset)
+    time.sleep(1)

@@ -32,7 +32,7 @@ if __name__ == '__main__':
     
     print(base03 + 'Base03' + reset, end=' ')
     print(base02 + 'Base02' + reset, end=' ')
-    print(base02 + 'Base02' + reset, end=' ')
+    print(base01 + 'Base01' + reset, end=' ')
     print(base00 + 'Base00' + reset, end=' ')
     print(base0 + 'Base0' + reset, end=' ')
     print(base1 + 'Base1' + reset, end=' ')
