@@ -62,11 +62,16 @@ while True:
     for count in range(num):
         side = random.choice(sides)
         print(c.random_color() + side + c.reset, end="")
+    while True:
+        try:
+            new_num = input()
+        except KeyboardInterrupt:
+            exit(0)
+        if new_num:
+            try:
+                num = int(new_num)
+            except ValueError:
+                print(c.magenta + 'Pleas give a number' + c.reset)
+                continue
 
-
-
-#===========================#
-#for n in range(6):
-#n = int(ask(c.clear + "show what side?"))\
-    #print(c.clear + c.random_color() + sides[n] + c.reset)
-    #time.sleep(1)
+        break        
