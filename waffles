@@ -1,0 +1,27 @@
+#!/usr/bin/python3
+
+
+
+question1 = 'Do you like waffles?'
+question2 = 'Do you like pancakes?'
+question3 = 'Do you like french toast?'
+
+print(question1)
+answer = input('->')
+if answer == 'no':
+    print('Well we like we like waffles')
+    exit()
+if answer == 'yes':
+    print(question2)
+    answer = input('->')   
+    if answer == 'no':
+        print('Well we like we like pancakes')
+        exit()
+    if answer == 'yes':
+        print(question3)
+        answer = input('->')
+        if answer == 'yes':
+            print('Do Do, Do Cant wait to have a mouthfull')   
+        if answer == 'no':
+            print('Well we like French Toast')
+            exit()
