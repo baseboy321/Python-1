@@ -1,0 +1,28 @@
+#!/usr/bin/env python3
+
+import colors as c
+import random
+import time
+q1 = 'Do you like waffles?'
+q2 = 'do you like pancakes?'
+q3 = 'do you like french toast?'
+print(c.random_color() , q1 + c.reset)
+answer = input(c.random_color() + '->')
+if answer == 'no':
+    print(c.red + 'Well, everyone else does!!')
+    exit()
+if answer == 'yes':
+    print(q2)
+    answer = input(c.magenta + '->')    
+    if answer == 'no':
+        print(c.red + 'Well, everyone else does!!')
+        exit()
+    if answer == 'yes':
+        print(q3)
+        answer = input('->')
+        if answer == 'yes':
+            for count in range (20):
+                print(c.clear + c.random_color() , 'do ,do do da cant wait to get a mouth full!!!')
+                time.sleep(0.1)
+        if answer == 'no':
+            print('well everyone else does')

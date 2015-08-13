@@ -1,0 +1,8 @@
+#!/usr/bin/env python3
+import random
+import colors as c
+print('What is your question')
+while True:    
+    ans = ['yes','no','mabey so']
+    question = input(' ')
+    print(c.random_color() + random.choice(ans))
